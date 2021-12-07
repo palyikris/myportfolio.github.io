@@ -1,5 +1,7 @@
 ---
 title: "Szerveroldali programozás"
+description: "Van egy adatbázisod, és kiírnál adatokat valahova? Adatbázisod sincs? Nem baj! Ezeket mind vállalom neked."
+
 ---
 
 Ha szeretnéd, hogy a weboldalad kommunikáljon egy szerverrel, adatbázissal, API-val, akkor ez kell neked! Szívesen összekötöm

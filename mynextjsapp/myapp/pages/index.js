@@ -38,14 +38,17 @@ export default function Home(allFeaturesData) {
         <div className={styles.featuresContainer}>
         <h1 className={styles.featuresH1}>Válaszd ki mit szeretnél!</h1>
           <div className={styles.featuresList}>
-          <section className={`${styles.heading} ${styles.padding1px}`}>
-            <ul className={styles.list}>
-              
-              {allFeaturesData.allFeaturesData.map(({id, title}) => (
-                <div className={styles.featureTitle}>{title}</div>
+              {allFeaturesData.allFeaturesData.map(({id, title, description}) => (
+                <div className={styles.featureContainer}>
+                  <div className={styles.feature}>
+                  <div className={styles.featureTitle}>{title}</div>
+                  <div className={styles.featureDesc}><p>{description}</p></div>
+                  <Link href={`/${id}`}>
+                    <a className={styles.linkToFeature}>Megnézem</a>
+                  </Link>
+                </div>
+                </div>
               ))}
-            </ul>
-      </section>
           </div>
         </div>
       </div>
