@@ -1,6 +1,8 @@
 import { getAllFeaturesId, getFeaturesData } from "../lib/features"
 import Head from "next/head"
 import Uniform from "../components/uniformComponents"
+import styles from "../styles/feature.module.css"
+import Image from "next/image"
 
 
 export async function getStaticProps({params}){
@@ -19,17 +21,32 @@ export async function getStaticPaths(){
     }
 }
 export default function Feature({featuresData}){
+    console.log(featuresData)
     return (
         <Uniform>
             <Head>
-                <title>{featuresData.title}</title>
+                <title>{featuresData.id}</title>
             </Head>
-            <article>
-                <h1 >{featuresData.title}</h1>
-                <br />
-                <br />
-                <div dangerouslySetInnerHTML = {{ __html: featuresData.contentHtml}} />
-            </article>
+            <div className={styles.introContainer}>
+                <div className={styles.intro}>
+                    <h1 class={styles.title}>{featuresData.title}</h1>
+                    <div className={styles.introText}><span className={styles.code}>&lt;Bevezetőszöveg&gt;</span><br />{featuresData.introcontent}<br /><span className={styles.code}>&lt;/Bevezetőszöveg&gt;</span></div>
+                
+                </div>
+                <div className={styles.htmlTag}>
+                    <pre>{featuresData.logo}</pre>
+                </div>
+            </div>
+            <div className={styles.imageEx}>
+                <span className={styles.imgBorder}>
+                    <Image src={featuresData.img} width="400vmin" height="200vmin">
+
+                    </Image>
+                </span>
+                <div className={styles.imageText}>
+                    {featuresData.imgdesc}
+                </div>
+            </div>
         </Uniform>
     )
 }

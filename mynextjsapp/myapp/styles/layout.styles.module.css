@@ -1,30 +1,32 @@
 .topnav{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    width: 100%;
+    background-color: #141c2a;
+
 }
 .topnav a{
-    width: 20%;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
     padding: 3vmin 2vmin;
-    background-color: #1a2538;
+    background-color: #141c2a;
     transition: all .7s;
     color: white;
     font-weight: bold;
+    width: 100%;
 }
 .topnav a:hover{
-    background-color: white;
-    color: #062745;
-    cursor: pointer;
+    color: #591ed9;
 }
 .footer{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    background-color: #1a2538;
+    background-color: #141c2a;
     color: white;
     font-weight: bold;
+    padding: 5vmin 3vmin;
 }

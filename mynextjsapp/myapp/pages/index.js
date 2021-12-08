@@ -15,11 +15,6 @@ export async function getStaticProps(){
 }
 
 export default function Home(allFeaturesData) {
-  /*const testList = [
-    {
-      "szabika" : "alavju"
-    }
-  ]*/
   return (
     <Uniform>
       <Head>
@@ -27,24 +22,30 @@ export default function Home(allFeaturesData) {
       </Head>
       <div className={styles.container}>
         <div className={styles.introduction}>
-          <div>
+          <div className={styles.introText}>
             <h1>Helló, én Kristóf vagyok!</h1>
-            <h4>Szeretnél magadnak egy szuper weboldalt?<br></br>
+            <h4 className={styles.introductoryText}>Szeretnél magadnak egy szuper weboldalt?<br></br>
               Egy olyat, ami interaktív, szép, és tud egy rakás<br></br> funkciót, amit csak szeretnél tényleg.<br></br><br></br>
-              Ha igen, akkor remek helyre jöttél. <span>Üdvözöllek!</span>
+              Ha igen, akkor remek helyre jöttél. <span className={styles.greetingSpan}>Üdvözöllek!</span>
             </h4>
           </div>
+          <div className={styles.clippy}>
+            <div className={styles.clippedDiv}>
+              <div className={styles.clippedDivInterior}></div>
+            </div>
+          </div>
         </div>
+        <div className={styles.separator}></div>
         <div className={styles.featuresContainer}>
         <h1 className={styles.featuresH1}>Válaszd ki mit szeretnél!</h1>
           <div className={styles.featuresList}>
               {allFeaturesData.allFeaturesData.map(({id, title, description}) => (
                 <div className={styles.featureContainer}>
                   <div className={styles.feature}>
-                  <div className={styles.featureTitle}>{title}</div>
+                  <div className={styles.featureTitle}>{id}</div>
                   <div className={styles.featureDesc}><p>{description}</p></div>
                   <Link href={`/${id}`}>
-                    <a className={styles.linkToFeature}>Megnézem</a>
+                    <a className={styles.linkToFeature}>.megnézem(ezt)</a>
                   </Link>
                 </div>
                 </div>

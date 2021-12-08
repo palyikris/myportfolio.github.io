@@ -1,16 +1,20 @@
 .introduction{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    padding-top: 20vmin;
 }
 .container{
-    background-color: #1a2538
+    background-color: #1a2538;
 }
 .featuresContainer{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 20vmin;
+    padding-bottom: 10vmin;
+
 }
 .featuresH1{
     color: white;
@@ -30,14 +34,14 @@
     align-items: center;
     flex-direction: column;
     background-color: #141c2a;
-    padding: 5vmin 3vmin 4vmin 3vmin;
+    padding: 10vmin 5vmin 6vmin 5vmin;
     border-radius: 10px;
     border: 2px solid #591ed9;
     color: white;
     font-weight: 600;
-    height: 60vmin;
+    height: 70vmin;
     width: 45vmin;
-    margin-top: 3vmin;
+    margin-top: 5vmin;
     transition: all 0.7s
 }
 .featureContainer{
@@ -71,5 +75,58 @@
 }
 .linkToFeature{
     text-transform: uppercase;
+    transition: all .7s;
+}
+.linkToFeature:hover{
+    border-bottom: 1px solid white
+}
+.introText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.introText h1{
+    font-size: 7vh;
+    color: white;
+    font-weight: 800;
+}
+.introText h4{
+    color: white;
+    opacity: .7;
+    font-weight: 300;
+    text-align: left;
+}
+.clippy{
+    border-radius: 1000px;
+    border: 1.5px solid #591ed9;
+    padding: 15vmin;
+}
+.clippedDiv{
+    position: relative;
+	width: 30vmin;
+	height: 30vmin;
+    background-color: #591ed9;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 
+}
+.clippedDivInterior{
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    bottom: 3px;
+    background: white;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background-color: #141c2a;
+}
+.greetingSpan{
+    font-weight: bold;
+}
+.separator{
+    background-color: #591ed9;
+    padding: .2vmin 0;
+    width: 100%;
+    margin: 30vmin 0;
+    transform: rotate(5deg);
 }
