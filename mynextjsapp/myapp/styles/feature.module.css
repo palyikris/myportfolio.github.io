@@ -61,6 +61,11 @@
     padding-left: 10vmin;
     border-left: 2px solid #591ed9;
     margin-left: 20vmin;
+    transition: all .7s;
+}
+.imageEx span:hover{
+    padding: 2vmin;
+    border: 2px solid #591ed9;
 }
 .imageEx span img{
     border-radius: 10px;

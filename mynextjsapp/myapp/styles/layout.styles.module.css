@@ -30,3 +30,8 @@
     font-weight: bold;
     padding: 5vmin 3vmin;
 }
+@media screen and (max-width: 780px) {
+    .topnav{
+        flex-direction: column;
+    }
+}
