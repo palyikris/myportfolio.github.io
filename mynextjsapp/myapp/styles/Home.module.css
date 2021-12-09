@@ -56,7 +56,6 @@
     transition: all 0.7s;
 }
 .featureContainer:hover{
-    cursor: pointer;
     padding: 0 2vmin 3vmin 0
 }
 .featureDesc{
@@ -86,7 +85,7 @@
     transition: all .7s;
 }
 .linkToFeature:hover{
-    border-bottom: 1px solid white
+    cursor: pointer;
 }
 .introText{
     display: flex;
@@ -273,7 +272,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 30vmin 0;
+    margin: 40vmin 0;
     padding: 0 20vmin;
 }
 .iceBreaker{
@@ -309,4 +308,57 @@
         transform: rotate(0);
         width: 100%;
     }
+}
+.proficiencyContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 40vmin 0;
+}
+.proficiencies{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 200vmin
+}
+.proficiency{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 50vmin;
+    color: #591ed9;
+    background-color: #141c2a;
+    height: 35vmin;
+    margin: 5vmin 2vmin;
+    padding: 4vmin 3vmin;
+    border-radius: 10px;
+    transition: all 0.8s;
+}
+.proficiency:hover{
+    transform: scale(1.2);
+    margin: 5vmin;
+    cursor:default;
+}
+.proficiencyTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.proficiencyTitle p{
+    font-weight: bold;
+    font-size: 4vh;
+}
+.proficiencyDescription{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:30vmin;
+    padding: 5vmin 0;
+}
+.proficiencyDescription p{
+    font-size: 2.3vh;
+    text-align: center;
 }
