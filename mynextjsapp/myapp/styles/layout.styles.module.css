@@ -28,7 +28,10 @@
     background-color: #141c2a;
     color: white;
     font-weight: bold;
-    padding: 5vmin 3vmin;
+    padding: 10vmin 3vmin;
+}
+.footer a{
+    margin: 5vmin
 }
 @media screen and (max-width: 780px) {
     .topnav{

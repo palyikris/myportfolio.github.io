@@ -70,3 +70,27 @@
 .imageEx span img{
     border-radius: 10px;
 }
+@media screen and (max-width: 780px) {
+    .introContainer{
+        flex-direction: column;
+    }
+    .introContainer *{
+        margin: 15vmin 0;
+    }
+    .htmlTag{
+        margin-top: 0;
+    }
+    .imageEx{
+        flex-direction: column;
+    }
+    .imageEx span{
+        margin-left: 0vmin;
+        border-left: none;
+        border-top: 2px solid #591ed9;
+        padding-left: 0;
+        padding-top: 10vmin;
+    }
+    .imageText{
+        margin: 30vmin 2vmin 0 2vmin;
+    }
+}

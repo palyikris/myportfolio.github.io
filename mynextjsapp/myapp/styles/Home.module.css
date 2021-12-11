@@ -55,7 +55,7 @@
     transition: all 0.7s;
 }
 .featureContainer:hover{
-    padding: 0 2vmin 5vmin 0
+    padding: 0 2vmin 5vmin 0;
 }
 .featureDesc{
     font-weight: 400;
