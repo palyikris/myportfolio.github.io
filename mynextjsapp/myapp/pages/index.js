@@ -36,7 +36,7 @@ export default function Home(allFeaturesData) {
               Weblapfejlesztő vagyok. Röviden, programokat írok a netre. Gyere, ismerd meg a munkám!
             </h4>
           </div>
-          <Image src="/../public/logo.png" width="500vmin" height="250vmin">
+          <Image src="/../public/logo.png" width="500vmin" height="250vmin" className={styles.image} alt="logo">
 
           </Image>
         </div>
@@ -165,6 +165,5 @@ export default function Home(allFeaturesData) {
         </div>
       </div>
     </Uniform>
-    
   )
 }

@@ -15,13 +15,13 @@ export default function myHead({children}){
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
             <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
             <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300&display=swap" rel="stylesheet" />
-            <link rel="icon" type="image/png" href="/../public/icon.png" />
+            <link rel="icon" href="/../public/icon.ico" />
             </Head>
             <topnav className={styles.topnav}>
                 <Link href={"/"}>
                     <a>.főoldal()</a>
                 </Link>
-                <Link href={"/"}>
+                <Link href={"/examples"}>
                     <a>.példák()</a>
                 </Link>
                 <Link href={"/"}>
