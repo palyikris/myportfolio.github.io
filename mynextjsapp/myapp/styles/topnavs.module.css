@@ -1,0 +1,68 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15vmin 0 30vmin 0;
+    margin: 0;
+    flex-direction: column;
+}
+.titleContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40vmin;
+}
+.titleContainer h1{
+    color: #591ed9;
+    font-weight: bold;
+    font-size: 10vh;
+}
+.container img{
+    border-radius: 10px;
+}
+.exampleContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.example{
+    width: 70vmin;
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #141c2a;
+    border-radius: 10px;
+    padding: 8vmin 6vmin;
+    margin: 3.5vmin 5vmin;
+    transition: all .7s ease-in;
+    box-sizing: border-box;
+    box-shadow: 6px 8px 10px #591ed9;
+    border: 1.5px solid #591ed9;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+.example:hover{
+    cursor: pointer;
+}
+.exampleTitle{
+    font-size: 6vh;
+    font-weight: bold;
+    margin-bottom: 7vmin;
+    color: #591ed9;
+    text-align: center;
+}
+.example p{
+    color: #591ed9;
+    text-align: center;
+    font-size: 3vh;
+    font-weight: 500;
+    margin-top: 8vmin;
+}
+.example b{
+    font-weight: bold;
+    font-size: 3.5vh;
+}
