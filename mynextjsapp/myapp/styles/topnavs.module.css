@@ -44,9 +44,12 @@
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+    transition: all ease-in 0.5s;
 }
 .example:hover{
     cursor: pointer;
+    box-shadow: 10px 12px 15px #591ed9;
+    transform: scale(1.05);
 }
 .exampleTitle{
     font-size: 6vh;

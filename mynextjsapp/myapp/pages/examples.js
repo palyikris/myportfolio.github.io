@@ -4,6 +4,9 @@ import Image from "next/image"
 import styles from "../styles/topnavs.module.css"
 
 export default function Example(){
+    console.log("yay")
+    let imgs = ["/../public/messages.png", "/../public/classes.png", "/../public/login.png"]
+    
     return(
     <Uniform>
         <Head>
