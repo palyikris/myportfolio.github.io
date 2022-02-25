@@ -9,6 +9,7 @@ export default function aboutMe(){
             <Head>
                 <title>Rólam</title>
             </Head>
+            
         </Uniform>
     )
 }

@@ -43,6 +43,16 @@ export default function Example(){
                         Egy teljesen kiépített loginrendszer, ami automatikusan menti és alkalmazza az új regisztrálókat és különböző tulajdonságaik alapján hoz fel nekik oldalakat.
                     </p>
                 </div>
+                <div className={styles.example}>
+                <div className={styles.exampleTitle}>Személyes portfólió</div>
+                    <Image src="/../public/login.png" width="500vmin" height="250vmin" alt="loginsystem">
+
+                    </Image>
+                    <p>
+                        Személyre szabott saját weboldal, gyönyörű design és animációk, SEO, és oldalon belüli speciális funckiók. Vállalom az oldal felhelyezését is, és az
+                        azzal járó problémákat, Te csak vedd meg a domain-t, és ennyi.
+                    </p>
+                </div>
             </div>
         </div>
     </Uniform>
